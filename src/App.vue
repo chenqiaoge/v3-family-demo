@@ -1,10 +1,24 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+  <Layout>
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </div>
+    <a-button>点击</a-button>
+    <router-view />
+  </Layout>
 </template>
+<script>
+import Layout from '@/components/layout.vue'
+export default {
+  data() {
+    return {}
+  },
+  components: {
+    Layout,
+  },
+}
+</script>
 
 <style lang="scss">
 #app {
